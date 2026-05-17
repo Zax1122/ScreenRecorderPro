@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d0d0d">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✂️ Video Editor"
+            android:textSize="20sp"
+            android:textColor="#44ff88"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="8dp"/>
+
+        <VideoView
+            android:id="@+id/videoPreview"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSelectedFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"
+            android:textColor="#aaaaaa"
+            android:gravity="center"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duration: --"
+            android:textColor="#888888"
+            android:gravity="center"
+            android:paddingBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnPickVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📂 Pick Video"
+            android:backgroundTint="#224477"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Trim Section -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Trim" android:textColor="#44ff88" android:textSize="14sp" android:paddingBottom="4dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Start" android:textColor="#aaaaaa" android:textSize="12sp"/>
+        <SeekBar android:id="@+id/sbTrimStart"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="End" android:textColor="#aaaaaa" android:textSize="12sp"/>
+        <SeekBar android:id="@+id/sbTrimEnd"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <Button android:id="@+id/btnTrim"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="✂️ Trim" android:backgroundTint="#445500" android:textColor="#ffffff"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Tools Row 1 -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <Button android:id="@+id/btnGif"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="🎞 → GIF" android:backgroundTint="#553300" android:textColor="#ffffff"
+                android:layout_marginEnd="4dp"/>
+            <Button android:id="@+id/btnCompress"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="🗜 Compress" android:backgroundTint="#330055" android:textColor="#ffffff"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Tools Row 2 -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="12dp">
+            <Button android:id="@+id/btnRotate"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="🔄 Rotate 90°" android:backgroundTint="#004444" android:textColor="#ffffff"
+                android:layout_marginEnd="4dp"/>
+            <Button android:id="@+id/btnPickAudio"
+                android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="🎵 Add Music" android:backgroundTint="#440033" android:textColor="#ffffff"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Merge Section -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Merge Videos" android:textColor="#44ff88" android:textSize="14sp"
+            android:paddingBottom="4dp"/>
+        <Button android:id="@+id/btnPickVideo2"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="📂 Pick Second Video" android:backgroundTint="#224477" android:textColor="#ffffff"
+            android:layout_marginBottom="8dp"/>
+        <Button android:id="@+id/btnMerge"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="🔗 Merge" android:backgroundTint="#445500" android:textColor="#ffffff"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Status -->
+        <TextView android:id="@+id/tvStatus"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="" android:textColor="#44ff88" android:textSize="12sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

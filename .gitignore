@@ -1,0 +1,10 @@
+app/build/
+build/
+.gradle/
+*.iml
+.idea/
+local.properties
+captures/
+*.orig
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+{
+  "name": "Screen Recorder Pro",
+  "type": "android",
+  "minSdkVersion": 26,
+  "targetSdkVersion": 34,
+  "compileSdkVersion": 34,
+  "applicationId": "com.recorder.pro",
+  "versionCode": 1,
+  "versionName": "1.0"
+}

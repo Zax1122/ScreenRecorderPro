@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d0d0d">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏺ Screen Recorder Pro"
+            android:textSize="22sp"
+            android:textColor="#ff4444"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready"
+            android:textColor="#aaaaaa"
+            android:gravity="center"
+            android:paddingBottom="12dp"/>
+
+        <!-- Toggles -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#1a1a1a"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <Switch android:id="@+id/switchMic"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🎤 Mic" android:textColor="#ffffff" android:checked="true"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <Switch android:id="@+id/switchFacecam"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="📷 FaceCam" android:textColor="#ffffff"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                <Switch android:id="@+id/switchBubble"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🫧 Bubble" android:textColor="#ffffff" android:checked="true"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Record Button -->
+        <Button
+            android:id="@+id/btnRecord"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="⏺ Start Recording"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#cc0000"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Action Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnScreenshot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📷 Screenshot"
+                android:backgroundTint="#224477"
+                android:textColor="#ffffff"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnEditor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="✂️ Editor"
+                android:backgroundTint="#224422"
+                android:textColor="#ffffff"
+                android:layout_marginStart="4dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙ Settings"
+            android:backgroundTint="#333333"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Save Path -->
+        <TextView
+            android:id="@+id/tvSavedPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#888888"
+            android:textSize="11sp"
+            android:paddingBottom="8dp"/>
+
+        <!-- Recent Files -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recent Recordings"
+            android:textColor="#ff4444"
+            android:textSize="14sp"
+            android:paddingBottom="4dp"/>
+
+        <LinearLayout
+            android:id="@+id/llRecentFiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+</ScrollView>
