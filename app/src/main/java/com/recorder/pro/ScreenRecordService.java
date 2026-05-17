@@ -4,6 +4,8 @@ import android.app.*;
 import android.content.*;
 import android.graphics.PixelFormat;
 import android.hardware.*;
+import android.hardware.display.DisplayManager;
+import android.hardware.display.VirtualDisplay;
 import android.media.*;
 import android.media.projection.*;
 import android.os.*;
